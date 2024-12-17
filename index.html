@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АИС «Обслуживание заказов»</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Заголовок страницы -->
+    <header>
+        <div class="container">
+            <h1>АИС «Обслуживание заказов»</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Добавить заказ</a></li>
+                    <li><a href="#">Поиск заказов</a></li>
+                    <li><a href="#">Администратор</a></li>
+                    <li><a href="#">Выход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main>
+        <div class="container">
+            <h2>Добро пожаловать в систему АИС «Обслуживание заказов»</h2>
+            <p>Выберите действие в меню сверху для работы с заказами, клиентами или отчетами.</p>
+
+            <!-- Форма добавления заказа -->
+            <section id="add-order">
+                <h3>Добавить заказ</h3>
+                <form>
+                    <label for="client-name">Имя клиента:</label>
+                    <input type="text" id="client-name" name="client-name" required>
+
+                    <label for="order-details">Детали заказа:</label>
+                    <textarea id="order-details" name="order-details" required></textarea>
+
+                    <label for="payment-status">Статус оплаты:</label>
+                    <select id="payment-status" name="payment-status">
+                        <option value="paid">Оплачен</option>
+                        <option value="unpaid">Не оплачен</option>
+                    </select>
+
+                    <button type="submit">Добавить заказ</button>
+                </form>
+            </section>
+
+            <!-- Форма поиска заказов -->
+            <section id="search-orders">
+                <h3>Поиск заказов</h3>
+                <form>
+                    <label for="search-query">Поиск по имени клиента или номеру заказа:</label>
+                    <input type="text" id="search-query" name="search-query">
+                    <button type="submit">Найти</button>
+                </form>
+
+                <!-- Список заказов -->
+                <div class="order-list">
+                    <h4>Результаты поиска</h4>
+                    <ul>
+                        <li>Заказ #1234 - Иванов Иван (Оплачен)</li>
+                        <li>Заказ #5678 - Петров Петр (Не оплачен)</li>
+                    </ul>
+                    <button>Загрузить больше</button>
+                </div>
+            </section>
+
+            <!-- Форма ошибки -->
+            <section id="error-page">
+                <h3>Ошибка</h3>
+                <p>Произошла ошибка. Попробуйте снова или обратитесь в службу поддержки.</p>
+                <button onclick="window.location.href='index.html';">Вернуться на главную</button>
+            </section>
+
+            <!-- Форма администратора -->
+            <section id="admin-form">
+                <h3>Управление пользователями</h3>
+                <form>
+                    <label for="user-name">Имя пользователя:</label>
+                    <input type="text" id="user-name" name="user-name" required>
+
+                    <label for="user-role">Роль:</label>
+                    <select id="user-role" name="user-role">
+                        <option value="admin">Администратор</option>
+                        <option value="operator">Оператор</option>
+                    </select>
+
+                    <button type="submit">Добавить пользователя</button>
+                </form>
+
+                <!-- Список пользователей -->
+                <h4>Список пользователей</h4>
+                <ul>
+                    <li>admin - Администратор <button>Редактировать</button> <button>Удалить</button></li>
+                    <li>operator - Оператор <button>Редактировать</button> <button>Удалить</button></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Нижняя часть страницы -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 АИС «Обслуживание заказов». Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
