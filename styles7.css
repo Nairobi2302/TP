@@ -1,0 +1,174 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили заголовка (header) */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00bcd4;
+}
+
+/* Основной контент */
+main {
+    padding: 20px 0;
+}
+
+h2, h3, h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Формы */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+textarea, 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+}
+
+/* Стили списка заказов */
+.order-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-list li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Стили кнопок внутри списка */
+.order-list button {
+    background-color: #007BFF;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Секция ошибки */
+#error-page {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#error-page button {
+    margin-top: 15px;
+}
+
+/* Стили администратора */
+#admin-form ul {
+    list-style: none;
+    padding: 0;
+}
+
+#admin-form li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#admin-form button {
+    margin-left: 10px;
+}
+
+/* Стили подвала (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
